@@ -13,6 +13,7 @@ public class StartActivity extends AppCompatActivity {
     protected static final  String ACTIVITY_NAME = "StartActivity";
     private Button button;
     private Button startChatButton;
+    private Button viewWeatherButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,16 @@ public class StartActivity extends AppCompatActivity {
                 Intent chatIntent = new Intent(getApplicationContext(),ChatWindow.class);
                 startActivity(chatIntent);
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+            }
+        });
+
+        viewWeatherButton = (Button) findViewById(R.id.weatherButton);
+        viewWeatherButton.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent weatherIntent = new Intent(getApplicationContext(), WeatherForecast.class);
+                Log.i(ACTIVITY_NAME, "Go to weather forcast");
+                startActivity(weatherIntent);
             }
         });
     }
