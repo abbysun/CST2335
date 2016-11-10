@@ -34,7 +34,7 @@ public class StartActivity extends AppCompatActivity {
         startChatButton.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent chatIntent = new Intent(getApplicationContext(),ChatWindow.class);
+                Intent chatIntent = new Intent(getApplicationContext(),MessageListActivity.class);
                 startActivity(chatIntent);
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
             }
