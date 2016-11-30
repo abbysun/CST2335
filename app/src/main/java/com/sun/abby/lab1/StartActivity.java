@@ -14,6 +14,8 @@ public class StartActivity extends AppCompatActivity {
     private Button button;
     private Button startChatButton;
     private Button viewWeatherButton;
+    private Button toolbarButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,17 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(weatherIntent);
             }
         });
+
+        toolbarButton = (Button) findViewById(R.id.test_toolbar_button);
+        toolbarButton.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent toolbarIntent = new Intent(getApplicationContext(), TestToolbar.class);
+                Log.i(ACTIVITY_NAME, "Go to Test Toolbar");
+                startActivity(toolbarIntent);
+            }
+        });
+
     }
 
     public void onActivityResult(int requestCode, int responseCode, Intent data){

@@ -40,4 +40,13 @@
         android:layout_below="@+id/startChat"
         android:layout_alignParentStart="true"
         android:layout_marginTop="36dp" />
+
+    <Button
+        android:text="@string/test_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/test_toolbar_button"
+        android:layout_below="@+id/weatherButton"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
