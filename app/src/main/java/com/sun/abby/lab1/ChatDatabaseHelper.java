@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 /**
- * Created by Abby on 2016-10-13.
+ * Created by Abby Sun on 2016-10-13.
  */
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "chatDatabase";
