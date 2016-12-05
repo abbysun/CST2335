@@ -8,9 +8,9 @@
         android:orderInCategory="101"
         app:showAsAction="always" />
 
-    <item android:id="@+id/menu_chat"
-        android:title="Chat"
-        android:icon="@drawable/chat"
+    <item android:id="@+id/menu_back"
+        android:title="Back"
+        android:icon="@drawable/back"
         android:orderInCategory="151"
         app:showAsAction="always" />
 
